@@ -1,5 +1,7 @@
 package org.example.task;
 
+import org.example.utils.ListNode;
+
 public class MergeTwoSortedLists {
 
     /*
@@ -11,23 +13,6 @@ public class MergeTwoSortedLists {
     Return the head of the merged linked list.
 
     */
-
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {
-        }
-
-        ListNode(int val) {
-            this.val = val;
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
-    }
 
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         if (list1 == null) return list2;
